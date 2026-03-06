@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Asim Ali | Data Analyst Portfolio</title>
+<style>
+/* ===== GENERAL ===== */
+* {margin:0; padding:0; box-sizing:border-box;}
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height:1.6;
+    background:#0f2027;
+    color:#e0e0e0;
+    scroll-behavior: smooth;
+}
+a {text-decoration:none; color: inherit;}
+section {padding:80px 20px;}
+h2 {
+    color:#00bcd4;
+    font-size:28px;
+    margin-bottom:20px;
+    display:inline-block;
+    padding-bottom:5px;
+}
+
+/* ===== NAVBAR ===== */
+nav {
+    position: sticky;
+    top:0;
+    background:#0a1b2e;
+    box-shadow:0 2px 10px rgba(0,0,0,0.5);
+    display:flex;
+    justify-content:center;
+    padding:10px 0;
+    z-index:100;
+}
+nav a {
+    margin:0 15px;
+    font-weight:bold;
+    color:#1f8ef1;
+    padding:5px 10px;
+    border-radius:5px;
+    transition:0.3s;
+}
+nav a:hover, nav a.active {
+    background: linear-gradient(135deg, #1f8ef1, #00bcd4);
+    color:#0f2027;
+}
+
+/* ===== HEADER ===== */
+header {
+    background: linear-gradient(135deg,#0f2027,#203a43,#2c5364);
+    color:white;
+    text-align:center;
+    padding:100px 20px 60px;
+}
+header h1 {font-size:48px; margin-bottom:10px;}
+header p {font-size:20px; margin-bottom:20px;}
+header .links a {
+    display:inline-block;
+    background:#1f8ef1;
+    color:white;
+    padding:10px 20px;
+    margin:0 10px;
+    border-radius:5px;
+    font-weight:bold;
+    transition:0.3s;
+}
+header .links a:hover {background:#00bcd4; color:#0f2027; transform:translateY(-2px);}
+
+/* ===== ABOUT ===== */
+.about p {max-width:900px; margin:auto; font-size:18px; text-align:center;}
+
+/* ===== SKILLS & LANGUAGES ===== */
+.skills .skill, .languages .skill {margin-bottom:20px;}
+.skills .skill-name, .languages .skill-name {font-weight:bold; margin-bottom:5px;}
+.skill-bar {
+    background:#203a43;
+    height:20px;
+    border-radius:10px;
+    overflow:hidden;
+}
+.skill-fill {
+    background: linear-gradient(135deg, #1f8ef1, #00bcd4);
+    height:100%;
+    width:0%;
+    border-radius:10px;
+    animation: fillSkill 2s forwards;
+}
+@keyframes fillSkill {from {width:0;} to {width:var(--skill-level);}}
+
+/* ===== PROJECTS ===== */
+.projects-container {
+    display:flex;
+    flex-wrap:wrap;
+    gap:20px;
+    justify-content:center;
+}
+.project-card {
+    background:#203a43;
+    border-radius:10px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.5);
+    width:300px;
+    padding:20px;
+    transition:0.3s;
+    color:#e0e0e0;
+}
+.project-card:hover {
+    transform:translateY(-5px);
+    box-shadow:0 8px 20px rgba(0,0,0,0.7);
+}
+.project-card h3 {margin-bottom:10px; color:#00bcd4;}
+.project-card p {font-size:15px; line-height:1.4;}
+.project-card ul {margin-left:15px; margin-top:5px;}
+
+/* ===== EDUCATION & CERTIFICATIONS ===== */
+.edu-cert ul {list-style:square; margin-left:20px; color:#e0e0e0;}
+
+/* ===== FOOTER ===== */
+footer {text-align:center; background:#0a1b2e; color:#e0e0e0; padding:20px;}
+
+/* ===== RESPONSIVE ===== */
+@media(max-width:768px) {
+    .projects-container {flex-direction:column; align-items:center;}
+    nav {flex-wrap:wrap;}
+}
+</style>
+</head>
+<body>
+
+<!-- NAVIGATION -->
+<nav>
+    <a href="#about" class="nav-link active">About</a>
+    <a href="#skills" class="nav-link">Skills</a>
+    <a href="#projects" class="nav-link">Projects</a>
+    <a href="#certifications" class="nav-link">Certifications</a>
+    <a href="#languages" class="nav-link">Languages</a>
+    <a href="#education" class="nav-link">Education</a>
+</nav>
+
+<!-- HEADER -->
+<header>
+    <h1>Asim Ali</h1>
+    <p>BSCS Student | Aspiring Data Analyst | Power BI, Excel, SQL, Python</p>
+    <div class="links">
+        <a href="https://linkedin.com/in/asimali07" target="_blank">LinkedIn</a>
+        <a href="https://github.com/Asim347" target="_blank">GitHub</a>
+        <a href="mailto:asimali135724680@gmail.com">Email</a>
+    </div>
+</header>
+
+<!-- ABOUT -->
+<section id="about" class="about">
+    <h2>Professional Summary</h2>
+    <p>
+        Detail-oriented and analytical Data Analyst with hands-on experience in Power BI, MS Excel, SQL, and Python.
+        Skilled in data cleaning, dashboard development, and generating actionable business insights.
+        Passionate about transforming raw data into meaningful reports that support decision-making.
+    </p>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" class="skills">
+    <h2>Technical Skills</h2>
+    <div class="skill">
+        <div class="skill-name">Power BI</div>
+        <div class="skill-bar"><div class="skill-fill" style="--skill-level:90%;"></div></div>
+    </div>
+    <div class="skill">
+        <div class="skill-name">Microsoft Excel</div>
+        <div class="skill-bar"><div class="skill-fill" style="--skill-level:95%;"></div></div>
+    </div>
+    <div class="skill">
+        <div class="skill-name">Python (Pandas, NumPy, Matplotlib)</div>
+        <div class="skill-bar"><div class="skill-fill" style="--skill-level:85%;"></div></div>
+    </div>
+    <div class="skill">
+        <div class="skill-name">SQL (MySQL)</div>
+        <div class="skill-bar"><div class="skill-fill" style="--skill-level:80%;"></div></div>
+    </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="projects">
+    <h2>Projects</h2>
+    <div class="projects-container">
+        <div class="project-card">
+            <h3>Sales Performance Dashboard</h3>
+            <p>Interactive dashboard tracking revenue, profit, and KPIs using DAX in Power BI.</p>
+            <p>🔗 <a href="https://github.com/Asim347/Power-BI-Projects" target="_blank">View on GitHub</a></p>
+        </div>
+        <div class="project-card">
+            <h3>Excel Business Analysis Report</h3>
+            <p>Cleaned and transformed raw sales data using Power Query and Pivot Tables.</p>
+            <p>🔗 <a href="https://github.com/Asim347/Excel_Projects" target="_blank">View on GitHub</a></p>
+        </div>
+        <div class="project-card">
+            <h3>SQL Customer Data Analysis</h3>
+            <p>Advanced queries with JOIN, GROUP BY, and Subqueries for customer insights.</p>
+        </div>
+        <div class="project-card">
+            <h3>Python Data Cleaning Project</h3>
+            <p>Cleaned messy CSV datasets using Pandas and visualized trends.</p>
+        </div>
+        <div class="project-card">
+            <h3>Super Store Sales Dashboard 📊</h3>
+            <p>Super Store Sales Dashboard in Power BI to transform raw retail data into actionable insights. This project focuses on identifying key drivers of profitability and sales trends across the US.</p>
+                       <p>🔗 <a href="https://github.com/Asim347/Power-BI-Projects" target="_blank">View on GitHub</a></p>
+        </div>
+    </div>
+</section>
+
+<!-- CERTIFICATIONS -->
+<section id="certifications" class="edu-cert">
+    <h2>Certifications</h2>
+    <ul>
+        <li>Cisco Data Science Certifications</li>
+        <li>Digi Skills Business Analytics Certificate</li>
+        <li>Data Analytics Essentials by Cisco</li>
+    </ul>
+</section>
+
+<!-- LANGUAGES -->
+<section id="languages" class="languages">
+    <h2>Languages</h2>
+    <div class="skill">
+        <div class="skill-name">English</div>
+        <div class="skill-bar"><div class="skill-fill" style="--skill-level:90%;"></div></div>
+    </div>
+    <div class="skill">
+        <div class="skill-name">Urdu</div>
+        <div class="skill-bar"><div class="skill-fill" style="--skill-level:100%;"></div></div>
+    </div>
+    <div class="skill">
+        <div class="skill-name">Pashto</div>
+        <div class="skill-bar"><div class="skill-fill" style="--skill-level:100%;"></div></div>
+    </div>
+</section>
+
+<!-- EDUCATION -->
+<section id="education" class="edu-cert">
+    <h2>Education</h2>
+    <p><strong>BS Computer Science</strong><br>Institute of Management Sciences (IMSciences), Peshawar<br>Expected Graduation: 2028</p>
+</section>
+
+<!-- FOOTER -->
+<footer>© 2026 Asim Ali | Data Analyst Portfolio</footer>
+
+<!-- JAVASCRIPT -->
+<script>
+// NAV LINK ACTIVE ON SCROLL
+const sections = document.querySelectorAll("section");
+const navLinks = document.querySelectorAll(".nav-link");
+window.addEventListener("scroll", () => {
+    let current = "";
+    sections.forEach(section => {
+        const sectionTop = section.offsetTop - 100;
+        if(pageYOffset >= sectionTop) current = section.getAttribute("id");
+    });
+    navLinks.forEach(link => {
+        link.classList.remove("active");
+        if(link.getAttribute("href") === "#" + current) link.classList.add("active");
+    });
+});
+
+// ANIMATE SKILL BARS
+const fills = document.querySelectorAll('.skill-fill');
+fills.forEach(fill => {
+    setTimeout(() => {
+        fill.style.width = fill.style.getPropertyValue('--skill-level');
+    }, 100);
+});
+</script>
+
+</body>
+</html>
